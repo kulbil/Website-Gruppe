@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css"/>
+    <title>Abra Havn Hotell</title>
+</head>
+<body>
+    
+    <div class="menu">
+        <div class="space"></div>
+        <div class="menu-element"><a href="" class="link">Hjem</a></div>
+        <div class="menu-element"><a href="" class="link">Booking</a></div>
+        <div class="special"><a href="" class="link">ABRA HAVN</a></div>
+        <div class="menu-element"><a href="" class="link">Kontakt Oss</a></div>
+        <div class="menu-element"><a href="" class="link">Logg inn</a></div>
+        </div>
+    </div>
+
+    <div class="BESTILLING">
+        <h1>BESTILLING</h1>
+        <h2 class="text">Fyll inn</h2>
+        <div class="text">
+            <p>Navn</p>
+            <input type="text" id="navn">
+            <p class="extramargin">Adresse</p>
+            <input type="text" id="adresse">
+            <p class="extramargin">E-post</p>
+            <input type="text" id="epost">
+            <p class="extramargin">Telefonnumer</p>
+            <input type="text" id="telefonnumer">
+        </div>
+
+        <h2 class="text extramargin">Type billeter</h2>
+        <div class="ticketdiv">
+            <div class="tickets smallticket">
+                <p><b>Dagspass Til Dyreaparken</b><br>269kr</p>
+                <img src="ticket1.png" alt="">
+                <input type="radio" name="tickettype" class="radio" value="269" id="dyreaparken" onchange="beregn()">
+            </div>
+            <div class="tickets">
+                <p><b>Dagspass Til Badeland</b><br>199kr</p>
+                <img src="ticket2.png" alt="">
+                <input type="radio" name="tickettype" class="radio" value="199" id="badeland" onchange="beregn()">
+            </div>
+            <div class="tickets specialticket">
+                <p><b>Dagspass Til Begge</b><br>349kr</p>
+                <img src="ticket3.png" alt="">
+                <input type="radio" name="tickettype" class="radio" value="349" id="begge" onchange="beregn()">
+            </div>
+        </div>
+        <div class="row">
+            <p class="text">Antall personer:</p>
+            <select id="antallPersoner" onchange="beregn()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+
+        <h2 class="text extramargin">Skal du overnatte?</h2>
+        <div class="row">
+            <p class="text">Fra</p>
+            <input type="date" class="dates" id="startDate" onchange="beregn()">
+            <p class="text">Til</p>
+            <input type="date" class="dates" id="endDate" onchange="beregn()">
+        </div>
+        <p class="text">Antall dager:</p>
+        <p class="text extramargin">I tilleg, har du lyst på:</p>
+        <div class="row">
+            <div class="checkbox">
+                <input type="checkbox" class="checkboxs" value="150" onchange="beregn()" id="frokost">
+                <p class="selectstuff">Frokost</p>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" class="checkboxs" value="250" onchange="beregn()"id="drikke">
+                <p class="selectstuff">Drikke</p>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" class="checkboxs" value="200" onchange="beregn()"id="dessert">
+                <p class="selectstuff">Dessert</p>
+            </div>
+        </div>
+        
+        <h1>Checkout</h1>
+        <div class="checkout">
+            <div class="row ">
+                <div>
+                    <p class="text" id="typebil"></p>
+                    <p class="text color-correction" id="bilpp"></p>
+                </div>
+                <div class="productprice">
+                    <p class="flexend" id="bilpris"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <p class="text" id="antallNatter"></p>
+                    <p class="text color-correction" id="natterpp"></p>
+                </div>
+                <div class="productprice">
+                    <p class="flexend" id="natterpris"></p>
+                </div>
+            </div>
+            <div class="row ">
+                <div>
+                    <p class="text" id="antallfrokost"></p>
+                    <p class="text color-correction" id="frokostpp"></p>
+                </div>
+                <div class="productprice">
+                    <p class="flexend" id="frokostpris"></p>
+                </div>
+            </div>
+            <div class="row ">
+                <div>
+                    <p class="text" id="antalldrikke"></p>
+                    <p class="text color-correction" id="drikkepp"></p>
+                </div>
+                <div class="productprice">
+                    <p class="flexend" id="drikkepris"></p>
+                </div>
+            </div>
+            <div class="row ">
+                <div>
+                    <p class="text" id="antalldessert"></p>
+                    <p class="text color-correction" id="dessertpp"></p>
+                </div>
+                <div class="productprice">
+                    <p class="flexend" id="dessertpris"></p>
+                </div>
+            </div>
+            <hr>
+            <div class="text flexend column">
+                <p id="totalpris">total + pris</p>
+                <button class="button" onclick="checkout()">betal</button>
+            </div>     
+        </div>
+        <p>‎</p>
+
+        <script src="booking.js"></script>
+    </div>
+
+</body>
+</html>

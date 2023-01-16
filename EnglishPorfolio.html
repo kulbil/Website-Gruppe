@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/x-icon" href="images/YAlogowhite.svg">
+        <title>Portfolio</title>
+    </head>
+
+
+
+<body onload="toweb()">
+
+    <div class="menu">
+        <a href="index.html"><img src="images/YAlogowhite.svg" alt="Logo" class="menu-logo"/></a>
+        <div class="space"></div>
+        <div class="menu-element"><a href="index.html" class="link">Home</a></div>
+        <div class="menu-element" id="dropdown">
+            <div><a class="link" id="normal-cursor">Year's Task</a></div>
+            <div class="dropdown-element">
+                <div class="testthing">
+                    <a class="normal-cursor">Sketches & Plans</a>
+                    <div class="dropdown-element-vertical">
+                        <a href="EnglishSAP.html" class="dropdown-link">1st Semester</a>
+                        <a href="EnglishSAP2.html" class="dropdown-link">2nd Semester</a>
+                    </div>
+                </div>
+                <a href="EnglishDM.html" class="dropdown-link">Design Manual</a>
+                <a href="EnglishCAN.html" class="dropdown-link">Computer & Network</a>
+            </div>
+        </div>
+        <div class="menu-element active"><a href="EnglishPorfolio.html" class="link">Portfolio</a></div>
+        <div class="menu-element" id="dropdown">
+            <div><a class="link" id="normal-cursor">About Me</a></div>
+            <div class="dropdown-element">
+                <a href="EnglishWAI.html" class="dropdown-link">Who Am I?</a>
+                <a href="EnglishPortfolioILLUS.html" class="dropdown-link">Illustration Portfolio</a>
+            </div>
+        </div>
+        <div class="menu-element"><a href="EnglishContactMe.html" class="link">Contact Me</a></div>
+        <div class="space"></div>
+        <div id="dropdown" class="language-element">
+            <img src="images/settings.png" alt="Logo" class="menu-language"/>
+            <div class="dropdown-language-element">
+                <a href="NorskPorfolio.html" class="dropdown-link" id="language-padding">English</a>
+                <a class="dropdown-link"><img src="images/sun.png" alt="" id="darkmodetoggle" onclick="changeStatus()"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="SAP-header">Portfolio</h1>
+
+    <div class="portfolio-navigation">
+        <p class="text-middle">My work during my first year as an It and media production student.</p>
+        <div class="row" style="margin-bottom:100px">
+            <div style="width:150px;height:90px;"><img src="images/webblack.png" alt="" class="image porticon pointer" onclick="toweb();" id="website"></div>
+            <div style="width:150px;height:90px;margin-right:30px;"><img src="images/imageblack.png" alt="" class="image porticon pointer" onclick="topic()" id="image"></div>
+            <div style="width:150px;height:90px;"><img src="images/videoblack.png" alt="" class="image porticon pointer" onclick="tovid()" id="video"></div>
+        </div>
+    </div>
+
+    <div class="column" id="websites">
+        <div class="row" style="margin-bottom:50px">
+            <a href="side-stuff/oppdrag-1-1/" target="blank" style="width:200px;height:160px" onmouseover="disp()"><img id="panda" height="120px" src="images/Logo_panda.svg" alt="" class="logo-port"></a>
+            <a href="side-stuff/oppdrag 3/calc.html" target="blank" style="width:200px;height:160px" onmouseover="disc()"><img id="calc" height="120px" src="images/gradeblack.png" alt="" class="logo-port"></a>
+            <a href="side-stuff/messurement-calc/Mcalc.html" target="blank" style="width:200px;height:160px" onmouseover="dism()"><img height="120px" id="mcalc" src="images/weightblack.png" alt="" class="logo-port"></a>
+            <a href="side-stuff/countries-and-medals/CAM.html" target="blank" style="width:200px;height:160px" onmouseover="disca()"><img height="120px" id="cam" src="images/medal.png" alt="" class="logo-port"></a>
+            <a href="side-stuff/Butikken-netthandel/BNH.html" target="blank" style="width:200px;height:160px" onmouseover="disb()"><img height="120px" id="bnh" src="images/cartblack.png" a="" class="logo-port"></a>
+            <a href="side-stuff/booking/booking.html" target="blank" style="width:200px;height:160px;" onmouseover="disbo()"><img height="120px" id="booking" src="images/hotal.png" alt="" class="logo-port"></a>
+        </div>
+        <p style="align-self: center; width:50%;" id="panda-text">This is the first website I made, it was done as an assignment task and it was about making a website for a lacrosse team where you could know about lacrosse and get to know about the team's schedule. This was the only website made during the first semester beside my personal website.</p>
+        <p style="align-self: center; width:50%;" id="calc-text">The second semster came around and this was the first website made that had javescript. The purpose of this website is to calculate one's grades and come back with the avarage grade. It is not complete, you cannot add your own subjects and remove the ones you do not need.</p>
+        <p style="align-self: center; width:50%;" id="mcalc-text">During a javescript course that we took, this was a task to be done where it converts length, volume, and mass from and back universal units and American units.</p>
+        <p style="align-self: center; width:50%;" id="cam-text">After the course, this was made and it focuses on arrays and information.</p>
+        <p style="align-self: center; width:50%;" id="bnh-text">Not done, but this was meant to be a food store where you could purchase items and log in. Only the log in form works.</p>
+        <p style="align-self: center; width:50%;" id="booking-text">A website for a hotel that wanted people to have an easy time booking into it as well as puschase tickets to the parks nearby. The date funtion is not figured out and the log in website for the staff is nonexistent.</p>
+    </div>
+
+    <div class="row" id="gallery">
+        <div class="portcolumn">
+            <img src="images/portfolio/class.png" alt="" class="image">
+            <img src="images/portfolio/way.png" alt="" class="image">
+            <img src="images/portfolio/suzilight.png" alt="" class="image">
+            <img src="images/portfolio/island.png" alt="" class="image">
+            <img src="images/portfolio/suzicool.png" alt="" class="image">
+            <img src="images/portfolio/oscarclose.png" alt="" class="image">
+        </div>
+        <div class="portcolumn">
+            <img src="images/portfolio/ducks.jpg" alt="" class="image">
+            <img src="images/portfolio/otherlake.png" alt="" class="image">
+            <img src="images/portfolio/fam.png" alt="" class="image">
+            <img src="images/portfolio/sea.jpg" alt="" class="image">
+            <img src="images/portfolio/oscar.png" alt="" class="image">
+            <img src="images/portfolio/steps.png" alt="" class="image">
+            <img src="images/portfolio/lake.png" alt="" class="image">
+        </div>
+        <div class="portcolumn">
+            <img src="images/portfolio/cat.jpg" alt="" class="image">
+            <img src="images/portfolio/path.png" alt="" class="image">
+            <img src="images/portfolio/trees.jpg" alt="" class="image">
+            <img src="images/portfolio/suzi.png" alt="" class="image">
+            <img src="images/portfolio/Reflection.png" alt="" class="image">
+        </div>
+    </div>
+
+    <div class="column" id="videos">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/gQB0eWc1fTw" frameborder="0" style="display:block; margin-left:auto; margin-right:auto; margin-top:auto; margin-bottom:50px;"></iframe>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/bZI0OTd2t9s" frameborder="0" style="display:block; margin-left:auto; margin-right:auto; margin-top:auto; margin-bottom:50px;"></iframe>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/lmNycbmloQA" frameborder="0" style="display:block; margin-left:auto; margin-right:auto; margin-top:auto; margin-bottom:50px;"></iframe>
+    </div>
+
+
+    <script src="website.js"></script>
+</body>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BNH.css">
+    <title>Butikk netthandel</title>
+</head>
+
+
+<body>
+
+
+    <div id="butikk">
+        <div class="item">
+            <p>Løk</p>
+            <img src="bilder/mat_1.png" alt="">
+            <div class="fixing">
+                <button class="red">-</button>
+                <p class="stylise">0</p>
+                <button class="green">+</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkOut">
+        <p></p>
+        <p></p>
+        <hr>
+        <p></p>
+    </div>
+
+
+
+
+    <div id="register">
+    <p>Forenavn</p>
+    <input type="text" id="Fornavn">
+    <p>Etternavn</p>
+    <input type="text"id="Etternavn">
+    <p>Postnummer</p>
+    <input type="text"id="Postnummer">
+    <p>E-postadresse</p>
+    <input type="text"id="postadresse">
+    <p>Password</p>
+    <input type="password" id="passwordOne">
+    <p>Gjente password</p>
+    <input type="password" id="passwordTwo">
+    <p id="errorMessage">‎</p>
+    <button onclick="checkPassword()">Logg inn</button>
+    </div>
+
+    <script src="BNH.js"></script>
+</body>
+
+
+</html>

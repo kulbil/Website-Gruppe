@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/YAlogowhite.svg">
+    <title>Computer & Network</title>
+</head>
+
+
+
+<body onload="hide()">
+
+    <div class="menu">
+        <a href="index.html"><img src="images/YAlogowhite.svg" alt="Logo" class="menu-logo"/></a>
+        <div class="space"></div>
+        <div class="menu-element"><a href="index.html" class="link">Home</a></div>
+        <div class="menu-element active" id="dropdown">
+            <div><a class="link" id="normal-cursor">Year's Task</a></div>
+            <div class="dropdown-element">
+                <div class="testthing">
+                    <a class="normal-cursor">Sketches & Plans</a>
+                    <div class="dropdown-element-vertical">
+                        <a href="EnglishSAP.html" class="dropdown-link">1st Semester</a>
+                        <a href="EnglishSAP2.html" class="dropdown-link">2nd Semester</a>
+                    </div>
+                </div>
+                <a href="EnglishDM.html" class="dropdown-link">Design Manual</a>
+                <a href="EnglishCAN.html" class="dropdown-link" id="active">Computer & Network</a>
+            </div>
+        </div>
+        <div class="menu-element"><a href="EnglishPorfolio.html" class="link">Portfolio</a></div>
+        <div class="menu-element" id="dropdown">
+            <div><a class="link" id="normal-cursor">About Me</a></div>
+            <div class="dropdown-element">
+                <a href="EnglishWAI.html" class="dropdown-link">Who Am I?</a>
+                <a href="EnglishPortfolioILLUS.html" class="dropdown-link">Illustration Portfolio</a>
+            </div>
+        </div>
+        <div class="menu-element"><a href="EnglishContactMe.html" class="link">Contact Me</a></div>
+        <div class="space"></div>
+        <div id="dropdown" class="language-element">
+            <img src="images/settings.png" alt="Logo" class="menu-language"/>
+            <div class="dropdown-language-element">
+                <a href="NorskCAN.html" class="dropdown-link" id="language-padding">English</a>
+                <a class="dropdown-link"><img src="images/sun.png" alt="" id="darkmodetoggle" onclick="changeStatus()"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="illus-proper">
+        <h1 class="h1">Computer</h1>
+        <p class="text-middle">Get to know the tehnology we use on daily a basis more.</p> 
+    </div>
+
+    <div class="rows">
+        <p class="CAN-extra">In our daily lives, we have tasks that require the help of a computer to complete. There are two main types of devices that people used, laptops and personal computers (pc). although they look different, both possess the same components and have their strengths and weakness. The model to the right will explain each component's importance and functionality. Get to know more about a certain part by clicking on it.</p>
+        <div class="CAN-row" id="setup">
+            <div class="CAN-row-text-spes">
+                <div class="PCcomp-names">Setup</div>
+                <div class="text">Personal computers consist of many parts that without any if it, the computer is not funtional. Through the mouse and keyboard, the computer receives input, and through the components within the case, the computer processes the input. The monitor is left to display the output created by the components.</div>
+            </div>
+            <div class="CAN-image-div-spes">
+                <div class="allecase">
+                    <div>
+                        <img src="images/PCcomp/monitor.png" alt="" id="monitorsimp" onclick="tomonitor()" class="pointer">
+                        <div>
+                            <img src="images/PCcomp/keyboardsimp.png" alt="" id="keyboardsimp" onclick="tokeyboard()" class="pointer">
+                            <img src="images/PCcomp/mousesimp.png" alt="" id="mousesimp" onclick="tomouse()" class="pointer">
+                        </div>
+                    </div>
+                    <img src="images/PCcomp/casesimp.png" alt="" id="casesimp" onclick="tocase()" class="pointer">
+                </div>
+            </div>
+        </div>
+        <div class="CAN-row" id="monitor">
+            <div class="CAN-row-text">
+                <div class="PCcomp-names">Compluter Monitor</div>
+                <div class="text">A computer monitor is an output device that displays information in pictorial or text form. A monitor usually comprises a visual display, some circuitry, a casing, and a power supply. The display device in modern monitors is typically a thin film transistor liquid crystal display with LED backlighting having replaced cold-cathode fluorescent lamp backlighting. Previous monitors used a cathode ray tube and some Plasma displays. Monitors are connected to the computer via VGA, DVI, HDMI, DisplayPort, USB-C, LVDS or other proprietary connectors and signals.</div>
+            </div>
+            <div class="CAN-image-div">
+                <div><img src="images/PCcomp/arrow.png" alt="" class="arrow" onclick="frommonitor()"></div>
+                <div><img src="images/PCcomp/monitor.png" alt="" class="image PCcomp-img"></div>
+            </div>
+        </div>
+        <div class="CAN-row" id="mouse">
+            <div class="CAN-row-text">
+                <div class="PCcomp-names">Computer Mouse</div>
+                <div class="text">A computer mouse is a handheld hardware input device that controls a cursor in a graphical user interface for pointing, moving and selecting text, icons, files, and folders on your computer. In addition to these functions, a mouse can also be used to drag-and-drop objects and give you access to the right-click menu. For desktop computers, the mouse is placed on a flat surface in front of your computer. The picture is an example of a Logitech desktop computer mouse with two primary buttons and a wheel.</div>
+            </div>
+            <div class="CAN-image-div">
+                <div><img src="images/PCcomp/arrow.png" alt="" class="arrow" onclick="frommouse()"></div>
+                <div><img src="images/PCcomp/mousecomp.png" alt="" class="image PCcomp-img"></div>
+            </div>
+        </div>
+        <div class="CAN-row" id="keyboard">
+            <div class="CAN-row-text">
+                <div class="PCcomp-names">Keyboard</div>
+                <div class="text">A computer keyboard is a peripheral input device modeled after the typewriter keyboard which uses an arrangement of buttons or keys to act as mechanical levers or electronic switches. Replacing early punched cards and paper tape technology, interaction via teleprinter-style keyboards have been the main input method for computers since the 1970s, supplemented by the computer mouse since the 1980s.</div>
+            </div>
+            <div class="CAN-image-div">
+                <div><img src="images/PCcomp/arrow.png" alt="" class="arrow" onclick="fromkeyboard()"></div>
+                <div><img src="images/PCcomp/keyboardcomp.png" alt="" class="image PCcomp-img"></div>
+            </div>
+        </div>
+        <div class="CAN-row" id="case">
+            <div class="CAN-row-text">
+                <div class="PCcomp-names">PC Case</div>
+                <div class="text">The computer case serves mainly as a way to physically mount and contain all the actual components inside a computer, like the motherboard, hard drive, optical drive, floppy disk drive, etc. They typically come bundled with a power supply. The housing of a laptop, netbook, or tablet is also considered a case, but since they aren't purchased separately or very replaceable, the computer case tends to refer to the one that's part of a traditional desktop PC.</div>
+            </div>
+            <div class="CAN-image-div">
+                <div><img src="images/PCcomp/arrow.png" alt="" class="arrow" onclick="fromcase()"></div>
+                <div class="casebg">
+                    <div><img src="images/PCcomp/harddrivesimp.png" alt="" id="harddrivesimp" onclick="toharddrive();StopEventPropagation(event)" class="pointer"></div>
+                    <div class="case-secondrow">
+                        <div><img src="images/PCcomp/powersupplysimp.png" alt="" id="powersupplysimp" onclick="topowersupply();StopEventPropagation(event)" class="pointer"></div>
+                        <div class="motherboardbg pointer" onclick="tomotherboard()">
+                            <div class="smallfix">
+                                <img src="images/PCcomp/cpusimp.png" alt="" id="cpusimp" onclick="tocpu();StopEventPropagation(event)" class="pointer">
+                                <img src="images/PCcomp/ramsimp.png" alt="" id="ramsimp" onclick="toram();StopEventPropagation(event)" class="pointer">
+                            </div>
+                            <img src="images/PCcomp/gpusimp.png" alt="" id="gpusimp" onclick="togpu();StopEventPropagation(event)" class="pointer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="CAN-row" id="cpu">
+            <div class="CAN-row-text">
+                <div class="PCcomp-names">CPU</div>
+                <div class="text">A central processing unit, also called CPU, a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program. The CPU performs basic arithmetic, logic, controlling, and input/output operations specified by the instructions in the program. <br> <br>
+                CPUs reside in almost all devices one owns, whether it’s a smartwatch, a computer, or a thermostat. They are responsible for processing and executing instructions and act as the brains of the devices. It is separate from the memory, which is where information is temporarily stored. It is also separate from the graphics card or graphics chip, which renders the video and 3D graphics that are displayed on your screen, however that is not always the case.<br> <br>
+                At its core, a CPU takes instructions from a program or application and performs a calculation. This process breaks down into three key stages: Fetch, decode, and execute. A CPU fetches the instruction from RAM, decodes what the instruction actually is, and then executes the instruction using relevant parts of the CPU.</div>
+            </div>
+            <div class="CAN-image-div">
+                <div><img src="images/PCcomp/arrow.png" alt="" class="arrow" onclick="fromcpu()"></div>
+                <div><img src="images/PCcomp/cpucomp.png" alt="" class="image PCcomp-img"></div>
+            </div>
+        </div>
+        <div class="CAN-row" id="gpu">
+            <div class="CAN-row-text">
+                <div class="PCcomp-names">GPU</div>
+                <div class="text">A graphics processing unit (GPU) is a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device. GPUs are used in embedded systems, mobile phones, personal computers, workstations, and game consoles. <br> <br>
+                Modern GPUs are very efficient at manipulating computer graphics and image processing. Their highly parallel structure makes them more efficient than general-purpose central processing units for algorithms that process large blocks of data in parallel. In a personal computer, a GPU can be present on a video card or embedded on the motherboard. In certain CPUs, they are embedded on the CPU itself.</div>
+            </div>
+            <div class="CAN-image-div">
+                <div><img src="images/PCcomp/arrow.png" alt="" class="arrow" onclick="fromgpu()"></div>
+                <div><img src="images/PCcomp/gpucomp.png" alt="" class="image PCcomp-img"></div>
+            </div>
+        </div>
+        <div class="CAN-row" id="harddrive">
+            <div class="CAN-row-text">
+                <div class="PCcomp-names">Hard drive</div>
+                <div class="text">A hard disk drive, hard disk, hard drive, HDD, or fixed disk is a data storage device that stores operating systems, applications, and data files such a documents, pictures and music that the computer uses. A hard drive is composed of a platter that contains compartments to hold data. This data is your operating system, applications, and any files you have created. There is also an actuator arm that moves across the platter to read or write the information requested. To make this process faster, the platter spins as the actuator arm moves across it. <br> <br>
+                    HDDs are proven technology that can hold a large amount of data (this varies by the size of the drive) and are relatively cheap. Under normal use, they are reasonably durable and function well.
+                    There are drawbacks, however. Hard disk drives can be slow, especially to open large applications or files. Because they do not write data sequentially, the data can become fragmented, with empty space within each compartment. This empty space is too small to use for data, but when the empty space is added together it can take up a large portion of the drive.<br> <br>
+                    Hard drives use a lot of power and produce a lot of heat. This makes them less useful in smaller computers like laptops and notebooks. Under normal circumstances HDDs are durable. But when hard drives are in portable computers that can be dropped or bumped while the platter is spinning, the drive can be damaged so that the data on them is not retrievable by end users.
+                    </div>
+            </div>
+            <div class="CAN-image-div">
+                <div><img src="images/PCcomp/arrow.png" alt="" class="arrow" onclick="fromharddrive()"></div>
+                <div><img src="images/PCcomp/harddrivecomp.png" alt="" class="image PCcomp-img"></div>
+            </div>
+        </div>
+        <div class="CAN-row" id="motherboard">
+            <div class="CAN-row-text">
+                <div class="PCcomp-names">Motherboard</div>
+                <div class="text">The motherboard is the main printed circuit board within a computer, which means it’s the primary piece of circuitry that all of the other pieces plug into to create a cohesive whole. The motherboard is the backbone that ties the computer’s components together at one spot and allows them to talk to each other. Without it, none of the computer pieces, such as the CPU, GPU, or hard drive, could interact. Total motherboard functionality is necessary for a computer to work well.<br><br>
+                As with all tech things, motherboards eventually die or become unusable. There are many symptoms of a failing motherboard and some include: peripherals that fail or take a long time to start up, computer powering off unexpectedly, computer not turning on at all, or a burning or chemical smell coming from your computer. <br><br>
+                Pro tip: A loose connection or failing power supply is more common than a failing motherboard. They are certainly a more affordable fix as well, so try these first before assuming the worst.</div>
+            </div>
+            <div class="CAN-image-div">
+                <div><img src="images/PCcomp/arrow.png" alt="" class="arrow" onclick="frommotherboard()"></div>
+                <div><img src="images/PCcomp/motherboardcomp.png" alt="" class="image PCcomp-img"></div>
+            </div>
+        </div>
+        <div class="CAN-row" id="powersupply">
+            <div class="CAN-row-text">
+                <div class="PCcomp-names">Power supply</div>
+                <div class="text">A power supply is an electrical device that supplies electric power to an electrical load. The main purpose of a power supply is to convert electric current from a source to the correct voltage, current, and frequency to power the load. As a result, power supplies are sometimes referred to as electric power converters.<br><br>
+                    Some power supplies are separate standalone pieces of equipment, while others are built into the load appliances that they power. Examples of the latter include power supplies found in desktop computers and consumer electronics devices. Other functions that power supplies may perform include limiting the current drawn by the load to safe levels, shutting off the current in the event of an electrical fault, power conditioning to prevent electronic noise or voltage surges on the input from reaching the load, power-factor correction, and storing energy so it can continue to power the load in the event of a temporary interruption in the source power (uninterruptible power supply).
+                    </div>
+            </div>
+            <div class="CAN-image-div">
+                <div><img src="images/PCcomp/arrow.png" alt="" class="arrow" onclick="frompowersupply()"></div>
+                <div><img src="images/PCcomp/powersupplycomp.png" alt="" class="image PCcomp-img"></div>
+            </div>
+        </div>
+
+        <div class="CAN-row" id="ram">
+            <div class="CAN-row-text">
+                <div class="PCcomp-names">RAM</div>
+                <div class="text">Random Access Memory (RAM) is the hardware in a computing device where the operating system (OS), application programs and data in current use are kept so they can be quickly reached by the device's processor. RAM is the main memory in a computer. It is much faster to read from and write to than other kinds of storage, such as a hard disk drive (HDD), solid-state drive (SSD) or optical drive.<br><br>
+                    Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.<br><br>
+                    Because of its volatility, RAM can't store permanent data. RAM can be compared to a person's short-term memory, and a hard disk drive to a person's long-term memory. Short-term memory is focused on immediate work, but it can only keep a limited number of facts in view at any one time. When a person's short-term memory fills up, it can be refreshed with facts stored in the brain's long-term memory.<br><br>
+                    A computer also works this way. If RAM fills up, the computer's processor must repeatedly go to the hard disk to overlay the old data in RAM with new data. This process slows the computer's operation.
+                    </div>
+            </div>
+            <div class="CAN-image-div">
+                <div><img src="images/PCcomp/arrow.png" alt="" class="arrow" onclick="fromram()"></div>
+                <div><img src="images/PCcomp/ramcomp.png" alt="" class="image PCcomp-img"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="illus-proper">
+        <h1 class="h1">IP-Address</h1>
+        <p class="text-middle">Learn more about setting up an IP-address.</p> 
+    </div>
+
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/Pz_7Lqi0Iu4" frameborder="0" style="display:block; margin-left:auto; margin-right:auto; margin-top:auto; margin-bottom:50px;"></iframe>
+
+    <div class="footer">
+        <div class="footer-element"><a href="EnglishContactMe.html" class="link">Contact Me</a></div>
+    </div>
+
+    <script src="website.js"></script>
+</body>
+
+
+
+</html>

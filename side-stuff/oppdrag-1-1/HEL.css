@@ -1,0 +1,198 @@
+body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+.menu-element{
+  display: flex;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  font-family: Century Gothic;
+}
+
+.menu-element:hover{
+  background-color: rgb(148, 190, 230);
+  text-decoration: underline;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+.logo{
+  max-width: 75px;
+  height: auto;
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#logo{
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.space{
+  display: flex;
+  flex: 5;
+}
+
+.user{
+  max-width: 50px;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown-all {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  font-family: century gothic;
+}
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: rgb(148, 190, 230);
+}
+
+.dropdown-all:hover .dropdown {
+  display: block;
+}
+
+#HEL{
+  background-color: rgb(148, 190, 230);
+}
+
+
+
+
+.content{
+margin-left: 10%;
+margin-right: 10%;
+}
+
+.HEL{
+  padding: 30px;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  font-family: Century Gothic;
+}
+
+.image{
+  max-width: 100%;
+  max-height: auto;
+}
+
+.image-div{
+  display: flex;
+  flex: 1;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-color:rgb(148, 190, 230);
+}
+
+.text{
+  display: flex;
+  flex: 1;
+  padding: 5px;
+  margin: 15px;
+  font-family: candara;
+}
+
+.kilde{
+  text-align: center;
+  margin: 40px;
+  font-family: Candara;
+}
+
+#kilde{
+  color: black;
+}
+
+
+
+
+
+
+
+
+.footer{
+  background-color: rgb(148, 190, 230);
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-element{
+  margin: 10px;
+  font-family: Century Gothic;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-two{
+  max-width: 100px;
+  height: auto;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.facebook{
+  max-width: 50px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 5px;
+}

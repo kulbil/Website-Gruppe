@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CAM.css">
+    <title>Olympiske vinterleker 2022</title>
+</head>
+
+<body>
+    
+    <h1>OLYMPISKE VINTERLEKER 2022</h1>
+
+    <p>Skriv et land i input-feltet</p>
+
+    <input type="text" id="input">
+
+    <button onclick="rewrite()">Søk</button>
+
+    <p id="country">‎</p>
+    <p id="medals">‎</p>
+    <p id="medalsTotal">‎</p>
+
+    <hr>
+
+    <P>Velg et verdensdel</P>
+
+    <select id="selectContinent" onchange="findContinent()">
+        <option value="Asia">Asia</option>
+        <option value="Europa">Europa</option>
+        <option value="Nord-Amerika">Nord-Amerika</option>
+    </select>
+    
+    <p id="continentMedalSeperate">‎</p>
+    <p id="continentMedalTotal">‎</p>
+    <p id="final"></p>
+
+    <script src="CAM.js"></script>
+</body>
+
+</html>

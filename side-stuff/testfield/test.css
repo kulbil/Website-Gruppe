@@ -1,0 +1,15 @@
+.container{
+    font-size: 30px;
+}
+
+#one{
+    display: block;
+}
+
+#two{
+    display: none;
+}
+
+#three{
+    display: block;
+}

@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(24, 24, 26);
+}
+
+.margin {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: arial,sans-serif;
+}
+
+.head-body{
+    border: white solid 2px;
+    background-color: rgb(26, 24, 43);
+}
+
+.head {
+    background-image: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(281deg 91% 38%) 90%);
+    padding: 5%;
+}
+
+.body {
+    background-color: rgb(26, 24, 43);
+}
+
+.color-correction {
+    color: rgb(179, 179, 179);
+}
+
+.space {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#nummer {
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+}

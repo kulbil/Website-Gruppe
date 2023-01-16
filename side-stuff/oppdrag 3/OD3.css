@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(44, 44, 61);
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+
+
+img{
+    width: 35px;
+    height: auto;
+}
+
+.text{
+    font-family: arial;
+    color: white;
+    font-size: 20px;
+}
+
+.input{
+    width: 35px;
+    height: 50px;
+    margin-top: auto;
+    background-color: white;
+}
+
+.red{
+    width: 35px;
+    height: 50px;
+    margin-top: auto;
+    background-color: rgb(255, 136, 136);
+}
+
+.space-over-all input{
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+}
+
+button{
+    height: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    font-family: arial;
+    font-size: 20px;
+    border: none;
+}
+
+button:hover{
+    background-color: grey;
+    border: none;
+}
+
+.margin-over-all{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.space-over-all{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fag{
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.extra-func{
+    width: 15rem;
+}
+
+.extra-func1{
+    margin-left: 2rem;
+}
+
+.extra-func2{
+    width: 15rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fjern{
+    display: block;
+    margin-left: auto;
+    background-color: rgb(255, 52, 52);
+    padding: 7.5px;
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+}
+
+.fjern:hover{
+    background-color: rgb(141, 27, 27);
+    cursor: pointer;
+}
+
+#GSDIV{
+    height: 75px;
+    width: 100%;
+    background-color: rgb(35, 133, 245);
+    color: white;
+    font-family: arial;
+    font-size: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

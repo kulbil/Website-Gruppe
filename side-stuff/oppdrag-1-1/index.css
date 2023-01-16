@@ -1,0 +1,213 @@
+body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+.menu-element{
+  display: flex;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  font-family: Century Gothic;
+}
+
+.menu-element:hover{
+  background-color: rgb(148, 190, 230);
+  text-decoration: underline;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+.logo{
+  max-width: 75px;
+  height: auto;
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#logo{
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.space{
+  display: flex;
+  flex: 5;
+}
+
+.user{
+  max-width: 50px;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown-all {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  font-family: century gothic;
+}
+
+/* listen som har "log in" og "sign up" er skjult pga "display: none;*/
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: rgb(148, 190, 230);
+}
+
+.dropdown-all:hover .dropdown {
+  display: block;
+}
+
+/* listen visis pga "display: none;*/
+
+
+
+
+.intro{
+  background-image: url("bilder/imageone.jpg");
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  padding: 150px;
+  text-align: center;
+}
+
+h1{
+  font-family: century gothic;
+}
+
+button{
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  border: none;
+  font-family: century gothic;
+  font-size: 20px;
+}
+
+button:hover{
+  background-color: rgb(148, 190, 230);
+}
+
+
+
+
+.content{
+  margin: 100px;
+}
+
+.image{
+  max-width: 100%;
+  max-height: auto;
+}
+
+.image-div{
+  display: flex;
+  flex: 1;
+  margin-right: 0;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.text{
+  display: flex;
+  flex: 2;
+  padding: 20px;
+  font-family: candara;
+  font-size: 25px;
+}
+
+.om-oss{
+  font-size: 30px;
+  font-family: century gothic;
+}
+
+
+
+
+.footer{
+  background-color: rgb(148, 190, 230);
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-element{
+  margin: 10px;
+  font-family: Century Gothic;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-two{
+  max-width: 100px;
+  height: auto;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.facebook{
+  max-width: 50px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 5px;
+}
