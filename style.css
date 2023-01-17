@@ -14,18 +14,18 @@ body{
 :root {
     --primary-color: #ffffff;
     --secondary-color: #000000;
-    --third-color: #a693bb;
+    --third-color: #f28484;
     --fourth-colour: #525252;
-    --fifth-colour: #a693bb;
+    --fifth-colour: #f28484;
 }
 
 
 [website-theme="light"] {
     --primary-color: #ffffff;
     --secondary-color: #000000;
-    --third-color: #a693bb;
+    --third-color: #f28484;
     --fourth-colour: #525252;
-    --fifth-colour: #a693bb;
+    --fifth-colour: #f28484;
 }
 
 
@@ -34,7 +34,7 @@ body{
     --secondary-color: #ffffff;
     --third-color: #4d3369;
     --fourth-colour: #525252;
-    --fifth-colour: #a693bb;
+    --fifth-colour: #f28484;
 }
 
 
