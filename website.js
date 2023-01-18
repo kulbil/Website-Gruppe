@@ -32,6 +32,8 @@ var camtext = document.getElementById("cam-text");
 var bnhtext = document.getElementById("bnh-text");
 var bookingtext = document.getElementById("booking-text");
 
+var tttBoxEl = document.getElementsByClassName("tttBox");
+var tttBoxBoxEl = document.getElementsByClassName("ttBoxBox");    
 
 
 localStorage.setItem('darkMode', "false");
