@@ -245,10 +245,11 @@ function fromram() {
 
 
 function checkfields() {
+    console.log("hei");
     if (fullname.value === "" || email.value === "" || message.value === "") {
-        alert("Fill all fields.")
+        alert("Fyll ut alle feltene.")
     } else {
-        window.location = "EnglishThankyou.html";
+        window.location = "NorskThankyou.html";
     }
 };
 

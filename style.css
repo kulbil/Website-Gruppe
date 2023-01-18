@@ -32,7 +32,7 @@ body{
 [website-theme="dark"] {
     --primary-color: #1d1c20;
     --secondary-color: #ffffff;
-    --third-color: #4d3369;
+    --third-color: #693333;
     --fourth-colour: #525252;
     --fifth-colour: #f28484;
 }
@@ -385,7 +385,7 @@ koden til*/
 }
 
 .button:hover {
-    background-color: #4e3663;
+    background-color: rgb(108, 36, 36);
     color: white;
 }
 
@@ -439,7 +439,7 @@ koden til*/
 }
 
 .row-text .button:hover {
-    background-color: #4e3663;
+    background-color: rgb(108, 36, 36);
     color: white;
 }
 
@@ -935,7 +935,7 @@ koden til*/
 }
 
 #unique{
-    background-color: rgb(78, 54, 99);
+    background-color: rgb(108, 36, 36);
     color: white;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -1047,7 +1047,7 @@ h2{
     font-family: calibri;
     font-size: 17.5px;
     padding: 5px;
-    background-color: rgb(166, 147, 187);
+    background-color: #f28484;
     color: white;
     border: none;
     border-radius: 5px;
@@ -1058,7 +1058,7 @@ h2{
 }
 
 .contactform button:hover{
-    background-color: rgb(78, 54, 99);
+    background-color: rgb(108, 36, 36);
     transition: 0.25s;
 }
 
