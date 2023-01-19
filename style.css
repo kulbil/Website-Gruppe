@@ -14,27 +14,27 @@ body{
 :root {
     --primary-color: #ffffff;
     --secondary-color: #000000;
-    --third-color: #f28484;
+    --third-color: #84c4f2;
     --fourth-colour: #525252;
-    --fifth-colour: #f28484;
+    --fifth-colour: #84c4f2;
 }
 
 
 [website-theme="light"] {
     --primary-color: #ffffff;
     --secondary-color: #000000;
-    --third-color: #f28484;
+    --third-color: #84c4f2;
     --fourth-colour: #525252;
-    --fifth-colour: #f28484;
+    --fifth-colour: #84c4f2;
 }
 
 
 [website-theme="dark"] {
     --primary-color: #1d1c20;
     --secondary-color: #ffffff;
-    --third-color: #693333;
+    --third-color: #335669;
     --fourth-colour: #525252;
-    --fifth-colour: #f28484;
+    --fifth-colour: #84c4f2;
 }
 
 
@@ -385,7 +385,7 @@ koden til*/
 }
 
 .button:hover {
-    background-color: rgb(108, 36, 36);
+    background-color: rgb(36, 80, 108);
     color: white;
 }
 
@@ -439,7 +439,7 @@ koden til*/
 }
 
 .row-text .button:hover {
-    background-color: rgb(108, 36, 36);
+    background-color: rgb(36, 88, 108);
     color: white;
 }
 
