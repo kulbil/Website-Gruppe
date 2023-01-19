@@ -1164,7 +1164,7 @@ transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0
 
 
 @media (min-width: 1921px) {
-    body{
+    .innhold{
         margin-left: 7.5%;
         margin-right: 7.5%;
     }
