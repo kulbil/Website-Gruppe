@@ -67,11 +67,8 @@ function checkfields() {
 $(".tttBoxBox").click(function() {
     $(this).css("background-color", "red");
     $(this).attr("id", "stateX");
-
-    if(!$(this).hasAttr("id")) {
-        var random = Math.floor( Math.random() * 9);
-        $(".tttBoxBox").eq(random).css("background-color", "yellow");
-    }
+    var random = Math.floor( Math.random() * 9);
+    $(".tttBoxBox").eq(random).css("background-color", "yellow");
 });
 
 
