@@ -64,11 +64,29 @@ function checkfields() {
     }
 };
 
+var turn = "x";
+
 $(".tttBoxBox").click(function() {
-    $(this).css("background-color", "red");
-    $(this).attr("id", "stateX");
-    var random = Math.floor( Math.random() * 9);
-    $(".tttBoxBox").eq(random).css("background-color", "yellow");
+    if(!$(this).hasClass('stateX') && !$(this).hasClass('stateY')) {
+        if(turn == "x") {
+            console.log($(this))
+            $(this).css("background-color", "yellow");
+            $(this).attr("class", "tttBoxBox stateY");
+            turn = "y";
+        } else if(turn == "y") {
+            console.log($(this))
+            $(this).css("background-color", "red");
+            $(this).attr("class", "tttBoxBox stateX");
+            turn = "x";
+        }
+    }
 });
+
+$("#restart").click(function() {
+    $(".tttBoxBox").css("background-color", "lightgray");
+    $(".tttBoxBox").removeClass("stateX");
+    $(".tttBoxBox").removeClass("stateY");
+    turn = "x";
+})
 
 
