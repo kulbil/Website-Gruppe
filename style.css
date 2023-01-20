@@ -63,6 +63,7 @@ h1, h2, p{
     background-color: var(--fourth-colour);
     position: sticky;
     top: 0;
+    height: 63px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -337,12 +338,6 @@ en av tabbene i menyen. det er lit komplisert*/
 }
 
 
-
-
-
-
-
-
 /*noe CSS koder er brukt i mer enn en side, men de ligger her  under det først siden som jeg brukte
 koden til*/
 
@@ -445,454 +440,6 @@ koden til*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-/*SAP(sketches and plans)-side*/
-
-
-.SAP-header{
-    text-align: center;
-    font-family: Avenir;
-}
-
-.site-sketches{
-    display: block;
-    margin: 5%;
-}
-
-
-.first-paras-SAP{
-    display: flex;
-    flex: 3;
-    font-family: calibri;
-    font-size: 17.5px;
-    line-height: 150%;
-    margin-right: 2rem;
-}
-
-.text-middle{
-    text-align: center;
-    font-family: calibri;
-    font-size: 17.5px;
-    margin-left: 5%;
-    margin-right: 5%;
-    line-height: 150%;
-    color: var(--secondary-color);
-}
-
-.SS-images{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.SAP-images{
-    flex: 2;
-    margin-top: auto;
-    margin-bottom: auto;
-    border: black solid 2px;
-}
-
-.image-SAP{
-    width: auto;
-    height: 400px;
-}
-
-.SAP-centered-text{
-    text-align: center;
-    font-family: calibri;
-    color: var(--secondary-color);
-}
-
-.site-sketches p{
-    text-align: center;
-    color: grey;
-    font-family: calibri;
-}
-
-
-
-
-
-
-
-/*Designmanual-siden*/
-
-.DM-images{
-    width: 300px;
-    margin: auto;
-}
-
-.DM-first-paras-SAP{
-    display: flex;
-    flex: 3;
-    font-family: calibri;
-    font-size: 17.5px;
-    line-height: 150%;
-    margin-right: 2rem;
-    text-align: center;
-}
-
-.column{
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: calibri;
-    font-size: 17.5px;
-}
-
-.colour-code{
-    display: flex;
-    flex-direction: row;
-    color: var(--secondary-color);
-}
-
-#RGB{
-    margin-left:422px;
-}
-
-#CMYK{
-    margin-left:330px;
-}
-
-#HEX{
-    margin-left:340px;
-}
-
-.colours{
-    width: 100px;
-    border: solid 4px var(--secondary-color);
-}
-
-.proper .column .row{
-    display: flex;
-    justify-content: space-between;
-}
-
-.RGB{
-    width: 50px;
-    color: var(--secondary-color);
-    display: flex;
-    align-items: center;
-}
-
-.CMYK{
-    width: 50px;
-    color: var(--secondary-color);
-    display: flex;
-    align-items: center;
-}
-
-
-.HEX{
-    width: 75px;
-    color: var(--secondary-color);
-    display: flex;
-    align-items: center;
-}
-
-#extra-margin{
-    margin-bottom: 75px;
-}
-
-.DM-proper{
-    padding-left: 5%;
-    padding-right: 5%;
-    display: flex;
-    flex-direction: column;
-    font-size: 17.5px;
-    line-height: 150%;
-}
-
-.avenir{
-    font-family: Avenir;
-    margin-bottom: 20px;
-}
-
-.calibri{
-    font-family: Calibri;
-}
-
-
-
-
-
-
-/*CAN(computer&network)-side*/
-
-.PCcomp-names{
-    font-size: 40px;
-    margin-bottom: 30px;
-}
-
-.CAN-image-div{
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-    margin-right: 50px;
-}
-
-.CAN-row-text{
-    flex: 3;
-    font-family: calibri;
-    text-align: left;
-    margin-right: 50px;
-    font-size: 17.5px;
-}
-
-.arrow{
-    width: 15%;
-    height: auto;
-    cursor: pointer;
-}
-
-.PCcomp-img{
-    margin-top: 25px;
-}
-
-
-.CAN-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
-    height: 35rem;
-}
-
-.casebg{
-    height: 31rem;
-    background-image: url("images/PCcomp/casecomp.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    margin-top: 25px;
-}
-
-.case-secondrow{
-    display: flex;
-    flex-direction: column;
-}
-
-.motherboardbg{
-    background-image: url("images/PCcomp/motherboardsimp.png");
-    background-size: 85%;
-    background-repeat: no-repeat;
-}
-
-
-/*------------------------*/
-
-#harddrivesimp{
-    width: 65%;
-    height: auto;
-    margin-top: 370px;
-    margin-left: 40px;
-}
-
-#powersupplysimp{
-    width: 75%;
-    height: auto;
-    margin-top: 20px;
-    margin-left: 60px;
-}
-
-#cpusimp{
-    width: 23%;
-    height: auto;
-    margin-bottom: 40px;
-    margin-left: 65px;
-}
-
-#ramsimp{
-    width: 20%;
-    height: auto;
-    margin-top: 12px;
-    margin-left: 50px;
-}
-
-#gpusimp{
-    width: 60%;
-    height: auto;
-    margin-top: 18px;
-    margin-left: 33px;
-    margin-bottom: 200px;
-}
-
-.smallfix{
-    height: 175px;
-}
-
-
-/*-----------------------*/
-
-
-#monitorsimp{
-    width: 70%;
-    height: auto;
-    display: block;
-    margin-left: 75px;
-}
-
-#keyboardsimp{
-    width: 75%;
-    height: auto;
-    margin-right: 20px;
-}
-
-#mousesimp{
-    width: 12%;
-    height: auto;
-}
-
-#casesimp{
-    width: 51.6%;
-    height: 51.6%;
-}
-
-.allecase{
-    display: flex;
-    flex-direction: row;
-}
-
-.CAN-image-div-spes{
-    display: flex;
-    flex: 4;
-    flex-direction: column;
-    margin-right: 50px;
-}
-
-.CAN-row-text-spes{
-    flex: 1;
-    font-family: calibri;
-    text-align: left;
-    margin-right: 50px;
-    font-size: 17.5px;
-}
-
-.pointer{
-    cursor: pointer;
-}
-
-.CAN-extra{
-    font-size: 17.5px;
-    font-family: calibri;
-}
-
-
-
-
-
-/*portfolio-side*/
-
-.portfolio-navigation{
-    display: block;
-    text-align: center;
-}
-
-.port-headers{
-    font-family: Avenir;
-    text-align: center;
-}
-
-.portfolio-margin{
-    margin: 5%;
-}
-
-.row-center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.port-row-text{
-    flex: 2;
-    padding-right: 2rem;
-    font-family: calibri;
-    text-align: left;
-    line-height: 150%;
-    font-size: 17.5px;
-}
-
-#port2, #port3{
-    padding-top: 75px;
-    padding-bottom: 20px;
-}
-
-.portfolio-navigation a{
-    color: var(--secondary-color);
-}
-
-.link-port{
-    color: var(--secondary-color);
-    margin-top: 2rem;
-    display: block;
-    font-family: calibri;
-}
-
-.logo-port{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    transition: 0.25s;
-    padding: 1rem;
-}
-
-#websites a:hover{
-    background-color: rgb(82, 82, 82);
-}
-
-#websites p{
-    display: none;
-}
-
-#websites{
-    margin-bottom: 200px;
-}
-
-/*-----------------------------------------------------------*/
-
-
-.porticon{
-    height: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
-    filter: opacity(0.5);
-    transition: 0.25s;
-}
-
-.porticon:hover{
-    filter: opacity(1);
-    transition: 0.25s;
-}
-
-.portcolumn{
-    flex: 28%;
-    max-width: 28%;
-    padding: 0 4px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 /*about me*/
 
 .WAI{
@@ -984,38 +531,6 @@ h2{
     font-family: Avenir;
 }
 
-
-
-
-
-
-
-
-/*Illustration portfolio*/
-
-.illus-proper{
-    padding-left: 5%;
-    padding-right: 5%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 5rem;
-}
-
-.illus-port{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5rem;
-}
-
-.h1{
-    font-family: Avenir;
-}
-
-.collage{
-    width: 100%;
-    max-height: auto;
-}
 
 
 
@@ -1172,3 +687,33 @@ transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0
 
 /* har ikke jobbe med responsiv sider mye, bare dette som kan gjør nesten alt jeg trenger på
 større skjerm*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 63);
+    width: 100vw;
+}
+
+#overskrift {
+    font-size:2.5vw;
+}
+
+#gameDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tttBox {
+    display: flex;
+}
+
+.tttBoxBox {
+    display: flex;
+}   
+
+
+
