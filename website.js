@@ -5,7 +5,7 @@ var email = document.getElementById("cmemail");
 var message = document.getElementById("cmmessage");
 
 var tttBoxEl = document.getElementsByClassName("tttBox");
-var tttBoxBoxEl = document.getElementsByClassName("ttBoxBox");    
+var tttBoxBoxEl = document.getElementsByClassName("tttBoxBox");    
 
 
 localStorage.setItem('darkMode', "false");
@@ -63,5 +63,15 @@ function checkfields() {
         window.location = "NorskThankyou.html";
     }
 };
+
+$(".tttBoxBox").click(function() {
+    $(this).css("background-color", "red");
+    $(this).attr("id", "stateX");
+
+    if(!$(this).hasAttr("id")) {
+        var random = Math.floor( Math.random() * 9);
+        $(".tttBoxBox").eq(random).css("background-color", "yellow");
+    }
+});
 
 

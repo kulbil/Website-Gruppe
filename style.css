@@ -703,17 +703,25 @@ større skjerm*/
 
 #gameDiv {
     display: flex;
+    height: 500px;
+    width: 500px;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    align-items: space-between;
 }
 
 .tttBox {
     display: flex;
+    justify-content: space-between;
 }
 
 .tttBoxBox {
     display: flex;
+    background: lightgray;
+    height: 160px;
+    width: 160px;
+    margin: 12px;
 }   
-
 
 
